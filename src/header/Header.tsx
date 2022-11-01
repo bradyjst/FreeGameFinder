@@ -11,6 +11,7 @@ export const Header: React.FC<HeaderProps> = ({ setGenre }) => {
 	const { css } = useFela();
 
 	const getGenre = (g: string) => {
+		//Hahah! G string LOL!
 		setGenre(g);
 		console.log("buttonworks!");
 	};
