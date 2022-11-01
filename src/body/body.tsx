@@ -7,10 +7,9 @@ import { BodyContainer } from "./body.fela";
 
 interface BodyProps {
 	genre: any;
-	getGenre: any;
 }
 
-export const Body: React.FC<BodyProps> = ({ genre, getGenre }) => {
+export const Body: React.FC<BodyProps> = ({ genre }) => {
 	const [games, setGames] = useState<any[]>([]);
 
 	useEffect(() => {

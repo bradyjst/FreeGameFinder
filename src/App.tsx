@@ -10,7 +10,7 @@ const App: React.FC = () => {
 	return (
 		<>
 			<Header setGenre={setGenre} />
-			<Body genre={genre} getGenre={setGenre} />;
+			<Body genre={genre} />;
 		</>
 	);
 };
