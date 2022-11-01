@@ -55,19 +55,27 @@ export const GenreContainer: StyleFunction<{}> = () => ({
 export const Description: StyleFunction<{}> = () => ({
 	width: "345px",
 	height: "40px",
+	overflow: "hidden",
+	textOverflow: "ellipsis",
+	whiteSpace: "nowrap",
 });
 
 export const Title: StyleFunction<{}> = () => ({
 	width: "250px",
+	overflow: "hidden",
+	textOverflow: "ellipsis",
+	whiteSpace: "nowrap",
 });
 
 export const ReleaseDate: StyleFunction<{}> = () => ({});
 
 export const InnerContainerLeft: StyleFunction<{}> = () => ({
 	width: "185px",
-	overflow: "clip",
+	overflow: "hidden",
+	textOverflow: "ellipsis",
 	display: "flex",
 	flexWrap: "wrap",
+	whiteSpace: "nowrap",
 });
 
 export const InnerContainerRight: StyleFunction<{}> = () => ({

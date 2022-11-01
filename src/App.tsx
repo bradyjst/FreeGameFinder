@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { Body } from "./body/body";
 import { Header } from "./header/Header";
 
-function App() {
+const App: React.FC = () => {
+	const [genre, setGenre] = useState("Shooter");
+	console.log(genre);
+
 	return (
 		<>
-			<Header genre="Shooter" />
-			<Body />;
+			<Header setGenre={setGenre} />
+			<Body genre={genre} getGenre={setGenre} />;
 		</>
 	);
-}
+};
 
 export default App;
